@@ -1,8 +1,11 @@
-import { ScanModal } from '@/components/modals/scan-modal'
+import dynamic from 'next/dynamic'
 import { Badge } from '@/components/ui/badge'
 import { FadeInSection } from '@/components/ui/fade-in-section'
 import { HERO_CONTENT } from '@/lib/constants'
 import { Check } from 'lucide-react'
+
+// Lazy load ScanModal - открывается по клику, не нужен для FCP
+const ScanModal = dynamic(() => import('@/components/modals/scan-modal').then(mod => ({ default: mod.ScanModal })))
 
 export function Hero() {
 	return (

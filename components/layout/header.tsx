@@ -1,7 +1,10 @@
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "./theme-toggle"
-import { MobileMenu } from "./mobile-menu"
+
+// Lazy load client components - не критичны для FCP
+const ThemeToggle = dynamic(() => import("./theme-toggle").then(mod => ({ default: mod.ThemeToggle })))
+const MobileMenu = dynamic(() => import("./mobile-menu").then(mod => ({ default: mod.MobileMenu })))
 
 export function Header() {
   return (
