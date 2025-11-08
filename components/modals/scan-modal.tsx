@@ -183,12 +183,20 @@ export function ScanModal() {
 
             {/* Actions */}
             <div className="flex gap-2">
-              <Button variant="outline" onClick={handleReset} className="flex-1">
-                Analyze Another
-              </Button>
-              <Button variant="ghost" onClick={handleClose} className="flex-1">
-                Close
-              </Button>
+              <button
+                onClick={handleReset}
+                className="group relative overflow-hidden inline-flex items-center justify-center h-9 px-4 text-sm rounded-md transition-all duration-300 hover:text-white flex-1 border border-input"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-primary to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <span className="relative z-10">Analyze Another</span>
+              </button>
+              <button
+                onClick={handleClose}
+                className="group relative overflow-hidden inline-flex items-center justify-center h-9 px-4 text-sm rounded-md transition-all duration-300 hover:text-white flex-1"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-primary to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <span className="relative z-10">Close</span>
+              </button>
             </div>
           </div>
         )}
