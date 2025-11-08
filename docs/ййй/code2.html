@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ Section - AI Detection Tool</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-10 sm:py-20">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center">
+<!-- SectionHeader -->
+<h2 class="text-[#0d141b] dark:text-slate-100 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.015em] text-center px-4 pb-2 pt-5">Frequently Asked Questions</h2>
+<!-- BodyText -->
+<p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg font-normal leading-normal pb-8 sm:pb-12 text-center px-4">Have questions? We've got answers.</p>
+<!-- Accordions -->
+<div class="flex flex-col p-4 w-full">
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-slate-700 py-3 group" open="">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2 transition-colors hover:text-primary dark:hover:text-primary">
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal group-hover:text-primary dark:group-hover:text-primary">How accurate is the AI detection?</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-open:rotate-180 group-hover:text-primary dark:group-hover:text-primary">expand_more</span>
+</summary>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pr-8">Our AI detection tool leverages advanced algorithms to provide high accuracy in distinguishing between human-written and AI-generated content. While no tool is 100% foolproof, we continuously update our models to maintain one of the highest accuracy rates in the industry.</p>
+</details>
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-slate-700 py-3 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2 transition-colors hover:text-primary dark:hover:text-primary">
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal group-hover:text-primary dark:group-hover:text-primary">What types of content can I check?</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-open:rotate-180 group-hover:text-primary dark:group-hover:text-primary">expand_more</span>
+</summary>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pr-8">You can check a wide variety of text-based content, including essays, articles, emails, reports, and social media posts. Our tool is designed to be versatile and effective across different writing styles and formats.</p>
+</details>
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-slate-700 py-3 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2 transition-colors hover:text-primary dark:hover:text-primary">
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal group-hover:text-primary dark:group-hover:text-primary">Is my data secure and private?</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-open:rotate-180 group-hover:text-primary dark:group-hover:text-primary">expand_more</span>
+</summary>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pr-8">Absolutely. We prioritize your privacy and data security. All submitted texts are processed securely, and we do not store your content or use it to train our AI models. Your confidentiality is guaranteed.</p>
+</details>
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-slate-700 py-3 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2 transition-colors hover:text-primary dark:hover:text-primary">
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal group-hover:text-primary dark:group-hover:text-primary">What are the pricing plans?</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-open:rotate-180 group-hover:text-primary dark:group-hover:text-primary">expand_more</span>
+</summary>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pr-8">We offer a range of pricing plans to suit different needs, from individual users to large enterprises. Visit our Pricing page for detailed information on each plan and its features.</p>
+</details>
+<details class="flex flex-col border-t border-t-slate-200 dark:border-t-slate-700 py-3 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2 transition-colors hover:text-primary dark:hover:text-primary">
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal group-hover:text-primary dark:group-hover:text-primary">How do I get started with the tool?</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-open:rotate-180 group-hover:text-primary dark:group-hover:text-primary">expand_more</span>
+</summary>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pr-8">Getting started is easy! Simply sign up for an account, choose a plan that works for you, and you can begin checking content immediately through our user-friendly dashboard.</p>
+</details>
+<details class="flex flex-col border-t border-b border-y-slate-200 dark:border-y-slate-700 py-3 group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2 transition-colors hover:text-primary dark:hover:text-primary">
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal group-hover:text-primary dark:group-hover:text-primary">Do you offer a free trial?</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-open:rotate-180 group-hover:text-primary dark:group-hover:text-primary">expand_more</span>
+</summary>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal pb-2 pt-2 pr-8">Yes, we offer a free trial with limited access to our features so you can experience the power and accuracy of our AI detection tool before committing to a paid plan.</p>
+</details>
+</div>
+<!-- CTA Section -->
+<div class="flex flex-col items-center gap-4 mt-8 sm:mt-12 text-center">
+<!-- BodyText -->
+<p class="text-slate-800 dark:text-slate-200 text-xl font-medium leading-normal px-4">Can't find your answer?</p>
+<!-- SingleButton -->
+<div class="flex px-4 py-3 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-slate-50 text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
+<span class="truncate">Get in Touch</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

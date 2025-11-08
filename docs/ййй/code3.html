@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - AI Detection Tool</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0052FF",
+              "background-light": "#F9FAFB",
+              "background-dark": "#101922",
+              "text-light": "#1E293B",
+              "text-dark": "#F9FAFB",
+              "border-light": "#E2E8F0",
+              "border-dark": "#334155",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 flex flex-1 justify-center py-12 md:py-20">
+<div class="layout-content-container flex flex-col w-full max-w-6xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+<!-- Left Column: Form -->
+<div class="flex flex-col">
+<h2 class="text-3xl lg:text-4xl font-bold leading-tight tracking-tighter text-text-light dark:text-text-dark mb-2">Get in Touch</h2>
+<p class="text-base font-normal leading-normal text-slate-600 dark:text-slate-400 mb-8">Have a question or want to talk to sales? We'd love to hear from you.</p>
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2 text-text-light dark:text-text-dark">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Enter your full name" type="text" value=""/>
+</label>
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2 text-text-light dark:text-text-dark">Work Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Enter your work email" type="email" value=""/>
+</label>
+</div>
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2 text-text-light dark:text-text-dark">Subject</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Enter the subject" type="text" value=""/>
+</label>
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2 text-text-light dark:text-text-dark">Your Message</p>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:border-primary focus:ring-2 focus:ring-primary/20 min-h-36 p-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Write your message here..."></textarea>
+</label>
+<button class="flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-primary text-white font-bold rounded-lg text-base leading-normal hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark transition-colors duration-200" type="submit">Send Message</button>
+</form>
+</div>
+<!-- Right Column: Contact Info & Socials -->
+<div class="flex flex-col pt-0 md:pt-16">
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-border-light dark:border-border-dark">
+<h3 class="text-xl font-bold mb-6 text-text-light dark:text-text-dark">Contact Information</h3>
+<ul class="space-y-5">
+<li class="flex items-center">
+<span class="material-symbols-outlined text-primary mr-4 text-2xl" data-icon="mail">mail</span>
+<a class="text-base text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:support@aidetect.com">support@aidetect.com</a>
+</li>
+<li class="flex items-center">
+<span class="material-symbols-outlined text-primary mr-4 text-2xl" data-icon="call">call</span>
+<a class="text-base text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="tel:+1-555-123-4567">+1 (555) 123-4567</a>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-4 text-2xl mt-1" data-icon="location_on">location_on</span>
+<span class="text-base text-slate-600 dark:text-slate-300" data-location="San Francisco, CA">123 Tech Avenue, Suite 100<br/>San Francisco, CA 94107</span>
+</li>
+</ul>
+<div class="border-t border-border-light dark:border-border-dark my-8"></div>
+<h3 class="text-xl font-bold mb-4 text-text-light dark:text-text-dark">Follow Us</h3>
+<div class="flex items-center space-x-4">
+<a aria-label="LinkedIn" class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path></svg>
+</a>
+<a aria-label="Twitter" class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<a aria-label="GitHub" class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
