@@ -8,14 +8,18 @@ import { Pricing } from "@/components/sections/pricing"
 import { FAQSection } from "@/components/sections/faq"
 import { CTA } from "@/components/sections/cta"
 
-// Lazy load Canvas - декоративный фон, не критичен для FCP
-const Canvas = dynamic(() => import("@/components/ui/canvas").then(mod => ({ default: mod.Canvas })))
+// Lazy load Canvas - декоративный фон, не критичен для FCP, только desktop
+const Canvas = dynamic(() => import("@/components/ui/canvas").then(mod => ({ default: mod.Canvas })), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
     <main className="relative min-h-screen">
-      {/* Canvas Background */}
-      <Canvas />
+      {/* Canvas Background - только на desktop */}
+      <div className="hidden md:block">
+        <Canvas />
+      </div>
 
       {/* Header */}
       <Header />
