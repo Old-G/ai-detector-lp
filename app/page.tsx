@@ -9,9 +9,7 @@ import { FAQSection } from "@/components/sections/faq"
 import { CTA } from "@/components/sections/cta"
 
 // Lazy load Canvas - декоративный фон, не критичен для FCP, только desktop
-const Canvas = dynamic(() => import("@/components/ui/canvas").then(mod => ({ default: mod.Canvas })), {
-  ssr: false,
-})
+const Canvas = dynamic(() => import("@/components/ui/canvas").then(mod => ({ default: mod.Canvas })))
 
 export default function Home() {
   return (

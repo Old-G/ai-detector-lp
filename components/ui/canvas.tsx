@@ -111,6 +111,10 @@ export function Canvas() {
 	const canvasRef = useRef<HTMLCanvasElement>(null)
 
 	useEffect(() => {
+		// Полностью отключаем на мобильных (< 768px)
+		const isMobile = window.innerWidth < 768
+		if (isMobile) return
+
 		const canvas = canvasRef.current
 		if (!canvas) return
 
